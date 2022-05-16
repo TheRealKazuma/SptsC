@@ -254,9 +254,8 @@ task.wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
                         wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
-                        wait()
-							wait(0.8)
-							game.Players.LocalPlayer.PlayerGui.plrstats.Enble = true
+							wait()
+							game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
                                                     end
                      end
                      end)
@@ -480,8 +479,8 @@ wait(1)
 game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
                             wait(1)
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48, 30, -272)
-	wait()
-                    
+							wait()
+							game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 	    else
     plr:Kick("Imagine not whitelisted L🤭")
 end
