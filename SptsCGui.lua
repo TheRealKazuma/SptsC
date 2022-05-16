@@ -255,6 +255,7 @@ task.wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
                         wait()
 game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+							game.Players.LocalPlayer.PlayerGui.plrstats.Enble = true
                                                     end
                      end
                      end)
@@ -478,6 +479,7 @@ coroutine.wrap(BUCNOT_fake_script)()
 game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
 task.wait()
 game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+	game.Players.LocalPlayer.PlayerGui.plrstats.Enble = true
                             wait(1)
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48, 30, -272)
                     
