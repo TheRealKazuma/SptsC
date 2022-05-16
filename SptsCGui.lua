@@ -477,6 +477,8 @@ coroutine.wrap(BUCNOT_fake_script)()
 
 wait(1)
 game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
+	wait()
+	game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
                             wait(1)
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48, 30, -272)
 							wait()
