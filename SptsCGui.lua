@@ -478,10 +478,10 @@ coroutine.wrap(BUCNOT_fake_script)()
 
 
 game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
-task.wait(0.5)
-game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
-                            wait(1.2)
+                            wait(1)
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48, 30, -272)
+	wait()
+	game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
                     
 	    else
     plr:Kick("Imagine not whitelisted L🤭")
