@@ -476,7 +476,7 @@ local function BUCNOT_fake_script() -- OpenCloseMain.LocalScript
 end
 coroutine.wrap(BUCNOT_fake_script)()
 
-
+wait(1)
 game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
                             wait(1)
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48, 30, -272)
