@@ -307,7 +307,6 @@ OnlyMesGui.Parent = Frame
 OnlyMesGui.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
 OnlyMesGui.Position = UDim2.new(1.98806894, 0, -0.668508291, 0)
 OnlyMesGui.Size = UDim2.new(0, 422, 0, 442)
-OnlyMesGui.Visible = false
 
 UICorner_2.Parent = OnlyMesGui
 
@@ -322,6 +321,117 @@ OnlyMesName.TextColor3 = Color3.fromRGB(0, 0, 0)
 OnlyMesName.TextSize = 40.000
 
 UICorner_3.Parent = OnlyMesName
+
+TextButton.Parent = OnlyMesGui
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton.Position = UDim2.new(0.02843602, 0, 0.190045252, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Split"
+TextButton.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton.TextSize = 50.000
+
+UICorner_4.Parent = TextButton
+
+TextButton_2.Parent = OnlyMesGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_2.Position = UDim2.new(0.02843602, 0, 0.341628969, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Split"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_2.TextSize = 50.000
+
+UICorner_5.Parent = TextButton_2
+
+TextButton_3.Parent = OnlyMesGui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_3.Position = UDim2.new(0.02843602, 0, 0.50678736, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Split"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_3.TextSize = 50.000
+
+UICorner_6.Parent = TextButton_3
+
+TextButton_4.Parent = OnlyMesGui
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_4.Position = UDim2.new(0.521327019, 0, 0.350678742, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Split"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_4.TextSize = 50.000
+
+UICorner_7.Parent = TextButton_4
+
+TextButton_5.Parent = OnlyMesGui
+TextButton_5.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_5.Position = UDim2.new(0.526066363, 0, 0.190045252, 0)
+TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Split"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_5.TextSize = 50.000
+
+UICorner_8.Parent = TextButton_5
+
+TextButton_6.Parent = OnlyMesGui
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_6.Position = UDim2.new(0.02843602, 0, 0.816742063, 0)
+TextButton_6.Size = UDim2.new(0, 200, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Split"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_6.TextSize = 50.000
+
+UICorner_9.Parent = TextButton_6
+
+TextButton_7.Parent = OnlyMesGui
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_7.Position = UDim2.new(0.02843602, 0, 0.658371091, 0)
+TextButton_7.Size = UDim2.new(0, 200, 0, 50)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Split"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_7.TextSize = 50.000
+
+UICorner_10.Parent = TextButton_7
+
+TextButton_8.Parent = OnlyMesGui
+TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_8.Position = UDim2.new(0.526066363, 0, 0.816742063, 0)
+TextButton_8.Size = UDim2.new(0, 200, 0, 50)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Split"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_8.TextSize = 50.000
+
+UICorner_11.Parent = TextButton_8
+
+TextButton_9.Parent = OnlyMesGui
+TextButton_9.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_9.Position = UDim2.new(0.526066363, 0, 0.658371091, 0)
+TextButton_9.Size = UDim2.new(0, 200, 0, 50)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Split"
+TextButton_9.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_9.TextSize = 50.000
+
+UICorner_12.Parent = TextButton_9
+
+TextButton_10.Parent = OnlyMesGui
+TextButton_10.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+TextButton_10.Position = UDim2.new(0.526066363, 0, 0.50678736, 0)
+TextButton_10.Size = UDim2.new(0, 200, 0, 50)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "Split"
+TextButton_10.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_10.TextSize = 50.000
+
+UICorner_13.Parent = TextButton_10
+
 
 GuiName.Name = "GuiName"
 GuiName.Parent = MainGui
@@ -357,7 +467,7 @@ local function YJOWT_fake_script() -- OnlyMes.LocalScript
 	if game.Players.LocalPlayer.Name == "AngelMaltee"
 	then
 	else
-		return
+	    plr:Kick("Can u read retard?🌈")
 	end
 	local frame = script.Parent.Parent.OnlyMesGui  -- change “Test” to the name of the frane
 	local open = false
@@ -486,4 +596,3 @@ game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
 	    else
     plr:Kick("Imagine not whitelisted L🤭")
 end
-
