@@ -235,6 +235,7 @@ game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
 task.wait()
                         local j = game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()
                         task.wait(1)
+						game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
                                                     if game.Players.LocalPlayer.Character:FindFirstChild("ForceField") then
                                 game.Players.LocalPlayer.Character:FindFirstChild("ForceField"):Destroy()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
@@ -243,7 +244,6 @@ task.wait()
                         wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
                         wait()
-game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 task.wait(0.2)
 game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
                                                     end
