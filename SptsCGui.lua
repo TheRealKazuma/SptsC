@@ -415,7 +415,6 @@ local function YJOWT_fake_script() -- OnlyMes.LocalScript
 
 	if game.Players.LocalPlayer.Name == "AngelMaltee"
 	then
-	
 	else
 		return
 	end
