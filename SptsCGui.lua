@@ -307,6 +307,7 @@ OnlyMesGui.Parent = Frame
 OnlyMesGui.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
 OnlyMesGui.Position = UDim2.new(1.98806894, 0, -0.668508291, 0)
 OnlyMesGui.Size = UDim2.new(0, 422, 0, 442)
+OnlyMesGui.Visible = false
 
 UICorner_2.Parent = OnlyMesGui
 
