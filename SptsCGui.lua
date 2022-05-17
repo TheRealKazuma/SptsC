@@ -48,11 +48,14 @@ local OnlyMesGui = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local OnlyMesName = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
-local GuiName = Instance.new("TextLabel")
+local Splitting = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
+local GuiName = Instance.new("TextLabel")
 local UICorner_5 = Instance.new("UICorner")
-local OpenCloseMain = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local OpenCloseMain = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
 
 --Properties:
 
@@ -309,6 +312,75 @@ OnlyMesName.TextColor3 = Color3.fromRGB(0, 0, 0)
 OnlyMesName.TextSize = 40.000
 
 UICorner_3.Parent = OnlyMesName
+
+Splitting.Name = "Splitting"
+Splitting.Parent = OnlyMesGui
+Splitting.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
+Splitting.Position = UDim2.new(0.02843602, 0, 0.190045252, 0)
+Splitting.Size = UDim2.new(0, 200, 0, 50)
+Splitting.Font = Enum.Font.SourceSans
+Splitting.Text = "Split"
+Splitting.TextColor3 = Color3.fromRGB(0, 255, 0)
+Splitting.TextSize = 50.000
+
+Splitting.MouseButton1Click:Connect(function()
+    -- tall script made by failedmite57926
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+function rm()
+    for i,v in pairs(Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            if v.Name == "Handle" or v.Name == "Head" then
+                if Character.Head:FindFirstChild("OriginalSize") then
+                    Character.Head.OriginalSize:Destroy()
+                end
+            else
+                for i,cav in pairs(v:GetDescendants()) do
+                    if cav:IsA("Attachment") then
+                        if cav:FindFirstChild("OriginalPosition") then
+                            cav.OriginalPosition:Destroy()
+                        end
+                    end
+                end
+                v:FindFirstChild("OriginalSize"):Destroy()
+                if v:FindFirstChild("AvatarPartScaleType") then
+                    v:FindFirstChild("AvatarPartScaleType"):Destroy()
+                end
+            end
+        end
+    end
+end
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("HeadScale"):Destroy()
+wait(1)
+    end)
+
+UICorner_4.Parent = Splitting
 
 GuiName.Name = "GuiName"
 GuiName.Parent = MainGui
