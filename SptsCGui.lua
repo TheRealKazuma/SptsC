@@ -2,20 +2,6 @@ repeat
 wait()
 until game:IsLoaded()
 wait(0.5)
-local wh = 'https://discord.com/api/webhooks/975846579351195701/kc0RcwMLeJx9RsuZwV_ia5-7Fmc2sLPrQn7PZ_QBdgkw-bbeIT3LkzB8izalgyc1tse9' -- your webhook
-
-local embed1 = {
-    ["title"] = game.Players.LocalPlayer.Name .." Executed the Spts:C Gui at: "..os.date("%H:%M", os.time())
-}
-local a =
-    syn.request(
-    {
-        Url = wh,
-        Headers = {["Content-Type"] = "application/json"},
-        Body = game:GetService("HttpService"):JSONEncode({["embeds"] = {embed1}, ["content"] = ""}),
-        Method = "POST"
-    }
-)
 local UIS = game:GetService("UserInputService")
 
     UIS.InputBegan:Connect(
@@ -246,7 +232,6 @@ game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
 task.wait()
                         local j = game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()
                         task.wait(1)
-						game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
                                                     if game.Players.LocalPlayer.Character:FindFirstChild("ForceField") then
                                 game.Players.LocalPlayer.Character:FindFirstChild("ForceField"):Destroy()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
@@ -254,8 +239,10 @@ task.wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
                         wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
-							wait()
-							game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+                        wait()
+game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+task.wait()
+game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
                                                     end
                      end
                      end)
@@ -323,117 +310,6 @@ OnlyMesName.TextSize = 40.000
 
 UICorner_3.Parent = OnlyMesName
 
-TextButton.Parent = OnlyMesGui
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton.Position = UDim2.new(0.02843602, 0, 0.190045252, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Split"
-TextButton.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton.TextSize = 50.000
-
-UICorner_4.Parent = TextButton
-
-TextButton_2.Parent = OnlyMesGui
-TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_2.Position = UDim2.new(0.02843602, 0, 0.341628969, 0)
-TextButton_2.Size = UDim2.new(0, 200, 0, 50)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Split"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_2.TextSize = 50.000
-
-UICorner_5.Parent = TextButton_2
-
-TextButton_3.Parent = OnlyMesGui
-TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_3.Position = UDim2.new(0.02843602, 0, 0.50678736, 0)
-TextButton_3.Size = UDim2.new(0, 200, 0, 50)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "Split"
-TextButton_3.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_3.TextSize = 50.000
-
-UICorner_6.Parent = TextButton_3
-
-TextButton_4.Parent = OnlyMesGui
-TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_4.Position = UDim2.new(0.521327019, 0, 0.350678742, 0)
-TextButton_4.Size = UDim2.new(0, 200, 0, 50)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "Split"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_4.TextSize = 50.000
-
-UICorner_7.Parent = TextButton_4
-
-TextButton_5.Parent = OnlyMesGui
-TextButton_5.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_5.Position = UDim2.new(0.526066363, 0, 0.190045252, 0)
-TextButton_5.Size = UDim2.new(0, 200, 0, 50)
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "Split"
-TextButton_5.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_5.TextSize = 50.000
-
-UICorner_8.Parent = TextButton_5
-
-TextButton_6.Parent = OnlyMesGui
-TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_6.Position = UDim2.new(0.02843602, 0, 0.816742063, 0)
-TextButton_6.Size = UDim2.new(0, 200, 0, 50)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Split"
-TextButton_6.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_6.TextSize = 50.000
-
-UICorner_9.Parent = TextButton_6
-
-TextButton_7.Parent = OnlyMesGui
-TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_7.Position = UDim2.new(0.02843602, 0, 0.658371091, 0)
-TextButton_7.Size = UDim2.new(0, 200, 0, 50)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "Split"
-TextButton_7.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_7.TextSize = 50.000
-
-UICorner_10.Parent = TextButton_7
-
-TextButton_8.Parent = OnlyMesGui
-TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_8.Position = UDim2.new(0.526066363, 0, 0.816742063, 0)
-TextButton_8.Size = UDim2.new(0, 200, 0, 50)
-TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.Text = "Split"
-TextButton_8.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_8.TextSize = 50.000
-
-UICorner_11.Parent = TextButton_8
-
-TextButton_9.Parent = OnlyMesGui
-TextButton_9.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_9.Position = UDim2.new(0.526066363, 0, 0.658371091, 0)
-TextButton_9.Size = UDim2.new(0, 200, 0, 50)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = "Split"
-TextButton_9.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_9.TextSize = 50.000
-
-UICorner_12.Parent = TextButton_9
-
-TextButton_10.Parent = OnlyMesGui
-TextButton_10.BackgroundColor3 = Color3.fromRGB(0, 85, 127)
-TextButton_10.Position = UDim2.new(0.526066363, 0, 0.50678736, 0)
-TextButton_10.Size = UDim2.new(0, 200, 0, 50)
-TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.Text = "Split"
-TextButton_10.TextColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_10.TextSize = 50.000
-
-UICorner_13.Parent = TextButton_10
-
-
 GuiName.Name = "GuiName"
 GuiName.Parent = MainGui
 GuiName.BackgroundColor3 = Color3.fromRGB(255, 0, 127)
@@ -468,11 +344,11 @@ local function YJOWT_fake_script() -- OnlyMes.LocalScript
 	if game.Players.LocalPlayer.Name == "AngelMaltee"
 	then
 	else
-	    plr:Kick("Can u read retard?🌈")
+		return
 	end
 	local frame = script.Parent.Parent.OnlyMesGui  -- change “Test” to the name of the frane
 	local open = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if frame.Visible == false then
 			frame.Visible = true
@@ -486,25 +362,25 @@ local function JUJHOXD_fake_script() -- OnlyMesGui.Drag
 	local script = Instance.new('LocalScript', OnlyMesGui)
 
 	local UserInputService = game:GetService("UserInputService")
-	
+
 	local gui = script.Parent
-	
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	
+
 	local function update(input)
 		local delta = input.Position - dragStart
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-	
+
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
-			
+
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -512,13 +388,13 @@ local function JUJHOXD_fake_script() -- OnlyMesGui.Drag
 			end)
 		end
 	end)
-	
+
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
@@ -530,25 +406,25 @@ local function YPDVA_fake_script() -- MainGui.Drag
 	local script = Instance.new('LocalScript', MainGui)
 
 	local UserInputService = game:GetService("UserInputService")
-	
+
 	local gui = script.Parent
-	
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	
+
 	local function update(input)
 		local delta = input.Position - dragStart
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-	
+
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
-			
+
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -556,13 +432,13 @@ local function YPDVA_fake_script() -- MainGui.Drag
 			end)
 		end
 	end)
-	
+
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
@@ -575,7 +451,7 @@ local function BUCNOT_fake_script() -- OpenCloseMain.LocalScript
 
 	local frame = script.Parent.Parent.MainGui  -- change “Test” to the name of the frane
 	local open = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if frame.Visible == false then
 			frame.Visible = true
@@ -586,6 +462,7 @@ local function BUCNOT_fake_script() -- OpenCloseMain.LocalScript
 end
 coroutine.wrap(BUCNOT_fake_script)()
 
+
 wait(1)
 game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
 	wait(0.1)
@@ -594,6 +471,7 @@ game:GetService("ReplicatedStorage").RespawnEvent:FireServer()
                             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48, 30, -272)
 							wait()
 							game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+
 	    else
     plr:Kick("Imagine not whitelisted L🤭")
 end
