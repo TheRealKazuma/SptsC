@@ -244,7 +244,7 @@ task.wait()
                         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(j)
                         wait()
 game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
-task.wait()
+task.wait(0.2)
 game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
                                                     end
                      end
