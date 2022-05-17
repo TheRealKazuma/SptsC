@@ -416,7 +416,6 @@ local function YJOWT_fake_script() -- OnlyMes.LocalScript
 	if game.Players.LocalPlayer.Name == "AngelMaltee"
 	then
 	else
-			plr:Kick("Cant u read it says its only for daddy Mestalic")
 		return
 	end
 	local frame = script.Parent.Parent.OnlyMesGui  -- change “Test” to the name of the frane
